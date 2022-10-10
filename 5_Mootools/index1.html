@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba</title>
+	<script type="text/javascript" src="mootools.js"></script>
+	<script type="text/javascript">
+	var Animal = new Class({
+    		initialize: function(age){
+        	this.age = age;
+    	}
+		});
+	var Cat = new Class({
+    	Extends: Animal,
+    	initialize: function(name, age){
+        this.parent(age); 
+        this.name = name;
+    	}
+	});
+	var myCat = new Cat('Chiisa', 17);
+	alert(myCat.name);
+	alert(myCat.age);
+	</script>
+	<script type="text/javascript">
+		var Animal = new Class({
+    		initialize: function(age){
+        	this.age = age;
+    	}
+		});
+	var Cat = new Class({
+    	Implements: Animal,
+    	setName: function(name){
+        this.name = name
+    }
+	});
+	var myAnimal = new Cat(17);
+	myAnimal.setName('Chiisa');
+	alert(myAnimal.name);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

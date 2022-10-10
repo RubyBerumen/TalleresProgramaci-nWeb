@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba</title>
+	<script type="text/javascript" src="mootools.js"></script>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #999;
+		}
+	</style>
+</head>
+<body>
+	<div id="prueba1" class="cprueba1"></div>
+	<div id="prueba2" class="cprueba2"></div>
+	<div id="prueba3" class="cprueba3"></div>
+	<input type="button" name="btn1" id="prueba4" value="aaa">
+	<script type="text/javascript">
+		var x = $('prueba1');  //var x = document.id('prueba1');
+		var y = $('prueba2');
+		var z = $('prueba3');
+		var a = $('prueba4');
+
+
+		// SET
+		//x.set('text', 'Hola mundo!');
+		//x.set('class', 'claseCambiada');
+		/*x.set('styles', {
+			font: '100px Arial',
+			color: 'blue'
+		});*/
+
+		//GET
+		//alert("id= "+x.get('id')+"   texto="+x.get('text')); //TAG, VALUE
+
+		//ERASE
+		//x.erase('class');
+
+		//MATCH
+		//alert(x.match('div'));
+		//alert(x.match('#prueba1'));
+		//alert(x.match('#prueba2')); //[name=bar]
+		//alert(a.match('[value=aaa]'));
+
+		//CONTAINS E INJECT/GRAB
+		//alert(x.contains(y));
+		//y.inject(x);            //inject(x, 'TOP/BOTTOM/BEFORE/AFTER');
+		//alert(x.contains(y));
+
+		//ADOPT
+		//y.adopt(z);
+		//x.adopt(y);
+
+		//--------------------------------------------------------------
+
+		//APPEND
+		//x.appendText('<h2>Hola mundo!</h2>');
+		//y.appendHTML('<h2>Hola mundo!</h2>');
+
+		//DISPOSE
+		//z.dispose();
+
+		//CLONE
+		//z.appendText("Hola mundo!");
+		//z.clone().inject(x).set("html", "<h2>Copiado");
+
+		//REPLACES
+		//new Element('div#cambiado.ccambiado').replaces(x);
+
+		//----------------------------------------------------------------
+
+		//CLASS
+		//if(x.hasClass('cprueba1'))
+		//	x.addClass('cprueba2')
+		//x.removeClass('cprueba2');
+		//x.toggleClass('cprueba2');
+
+		//----------------------------------------------------------------
+		/*
+			var aaa = x.getPrevious(val);
+					   .getAllPrevious();
+					   .getNext(val);
+					   .getAllNext();
+					   .getFirst(val);
+					   .getLast(val);
+					   .getParent();
+					   .getParents();
+					   .getSibling();
+					   .getChildren(val);
+					   .empty();
+					   .destroy();
+		*/
+
+		//alert(x.getSize().x + "---" + x.getSize().y);
+	</script>
+</body>
+</html>
