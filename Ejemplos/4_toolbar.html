@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css" charset="utf-8">
+    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript" charset="utf-8"></script>
+    <title>Toolbar</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        // webix.ready(() => {
+
+
+        webix.ui({
+
+            view: "toolbar",
+            height: 50,
+            elements: [
+                { view: "button", width: 80, css: "webix_primary" },
+                {
+                    view: "segmented", width: 250, options: [
+                        { id: "create", value: "Create" },
+                        { id: "edit", value: "Edit" },
+                        { id: "delete", value: "Delete" }
+                    ]
+                },
+                { view: "text", label: "text" },
+                {
+                    view: "select", label: "Select", options: [
+                        { id: "create", value: "Create New Tab" },
+                        { id: "edit", value: "Edit Tab" },
+                        { id: "delete", value: "Delete Tab" }
+                    ]
+                }
+            ],
+            elementsConfig: {
+                labelWidth: 50,
+                labelAlign: "right",
+                value: "edit"
+            }
+        })
+
+
+
+
+
+        //});
+
+    </script>
+
+</body>
+
+</html>

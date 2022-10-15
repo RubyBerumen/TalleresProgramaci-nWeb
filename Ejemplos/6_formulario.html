@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css" charset="utf-8">
+    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript" charset="utf-8"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        webix.ready(() => {
+
+
+            webix.ui({
+                view: "form", elements: [
+                    {
+                        label: "Nombre",
+                        view: "label",
+                    },
+                    {
+                        view: "text",
+                        width: 200,
+                        type: "text"
+                    },
+                    {
+                        label: "Correo electrónico",
+                        view: "label",
+                        width: 200
+                    },
+                    {
+                        view: "text",
+                        width: 200
+                    },
+                    {
+                        label: "Fecha nacimiento",
+                        view: "label",
+                        width: 200
+                    },
+                    {
+                        view: "datepicker",
+                        width: 200
+                    },    
+                    {
+                        view: "checkbox",
+                        width: 200,
+                        value: 0,
+                        label: "Terminos de uso",
+                        labelWidth: 150
+                    },
+                    {
+                        view: "button",
+                        value: "Enviar",
+                        left: 220,
+                        top: 250,
+                        width: 200,
+                        css: "webix_primary" ,
+                        click: function () {
+                            webix.message("Formulario enviado");
+                        }
+                    }
+
+
+
+
+
+
+
+
+                ]
+
+            })
+
+        });
+
+    </script>
+
+</body>
+
+</html>
