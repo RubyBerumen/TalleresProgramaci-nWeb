@@ -1,0 +1,58 @@
+body {
+  background: #ffd7f9;
+}
+h2 {
+  color: #CF39B7;
+  font-family: Helvetica;
+}
+caja {
+  font-family: Helvetica;
+}
+.texto {
+  color: #CF39B7;
+}
+.menu .lista {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+.menu .lista li {
+  border: 4px solid #880775;
+  background: #F8BBEE;
+  margin: 15px;
+  padding: 15px;
+  font-family: Helvetica;
+}
+.menu .lista li a {
+  color: #880775;
+  text-decoration: none;
+}
+.estilizar_caja {
+  border: 1px solid #880775;
+  background: #F8BBEE;
+  padding: 50px;
+  color: white;
+  width: 25%;
+}
+.caja {
+  border: 1px solid #880775;
+  background: #F8BBEE;
+  padding: 50px;
+  color: white;
+  width: 25%;
+}
+.texto {
+  border: 1px solid #880775;
+  background: #F8BBEE;
+  padding: 50px;
+  color: white;
+  width: 25%;
+  color: #880775;
+  font-family: Helvetica;
+  width: 650px;
+}
+.texto .link {
+  color: #e60dc1;
+  text-decoration: none;
+  font-family: #880775;
+}
